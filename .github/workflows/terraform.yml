@@ -3,14 +3,14 @@ on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'     
+        description: 'Owner'     
         required: true
-        default: 'warning' 
+        default: 'Ioana' 
         type: choice
         options:
-        - info
-        - warning
-        - debug 
+        - Ioana
+        - Ioana2
+        - Ioana3
 jobs:
   terraform:
     name: "Terraform"
