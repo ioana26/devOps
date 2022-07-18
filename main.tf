@@ -1,4 +1,5 @@
 terraform {
+  
   required_providers {
     google = {
       source  = "hashicorp/google"
@@ -12,5 +13,6 @@ terraform {
     workspaces {
       name = "Google_credentials"
     }
+  }
   }
 }
