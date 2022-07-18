@@ -9,10 +9,10 @@ terraform {
 
   cloud {
     organization = "iavirvarei"
-    workspaces {
+  workspaces {
       name = "Google_credentials"
     }
-    token = "cABF9S0BN7gaqQ.atlasv1.Xh43DVWXFiOUkmJlayYvirSXT3SuJvX1VNKFfUXq54tjulCnnibyxRrch4NsjexHtyE"
+  token = "cABF9S0BN7gaqQ.atlasv1.Xh43DVWXFiOUkmJlayYvirSXT3SuJvX1VNKFfUXq54tjulCnnibyxRrch4NsjexHtyE"
   }
 }
   resource "google_compute_firewall" "ssh" {
