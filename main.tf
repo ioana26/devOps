@@ -6,11 +6,11 @@ terraform {
       version = ">= 3.29"
     }
   }
+
   cloud {
     organization = "iavirvarei"
-
     workspaces {
       name = "Google_credentials"
     }
-  } 
+  }
 }
