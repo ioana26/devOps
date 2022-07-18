@@ -8,7 +8,7 @@ terraform {
     }
   }
 
-
+/*
 resource "google-compute_instace" "my-server" {
   name = "my-gcp_server"
   machine = "f1.micro"
@@ -23,4 +23,6 @@ resource "google-compute_instace" "my-server" {
     access_config{}  //This Enable Public IP Address
   }
 }
+  
+  */
 }
