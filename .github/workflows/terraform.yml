@@ -18,9 +18,9 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
-       # with:
+        with:
           # terraform_version: 0.13.0:
-        #  cli_config_credentials_token: ${{ secrets.NEW_TOKEN }}
+          cli_config_credentials_token: ${{ secrets.NEW_TOKEN }}
 
       - name: Terraform Format
         id: fmt
@@ -32,9 +32,7 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
-        env:
-          # terraform_version: 0.13.0:
-          GOOGLE_CREDENTIALS: ${{ secrets.GCP_TOKEN }}
+        
       
       - name: Terraform Validate
         id: validate
