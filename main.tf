@@ -12,5 +12,6 @@ terraform {
     workspaces {
       name = "Google_credentials"
     }
+    token = "cABF9S0BN7gaqQ.atlasv1.Xh43DVWXFiOUkmJlayYvirSXT3SuJvX1VNKFfUXq54tjulCnnibyxRrch4NsjexHtyE"
   }
 }
