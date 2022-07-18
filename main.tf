@@ -1,13 +1,11 @@
 terraform {
   required_providers {
-    
-    random = {
-      source  = "hashicorp/random"
-      version = "3.0.1"
+    google = {
+      source  = "hashicorp/google"
+      version = ">= 3.29"
+      region  = "us-central1"
     }
-  }
-  required_version = ">= 1.1.0"
-
+    
   cloud {
     organization = "iavirvarei"
 
