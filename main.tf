@@ -6,9 +6,6 @@ terraform {
     workspaces {
       name = "Google_credentials"
     }
-    api.token {
-      name = "GCP-token"
-  }
   }
 }
 
