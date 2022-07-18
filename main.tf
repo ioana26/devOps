@@ -1,3 +1,12 @@
+rraform {
+
+  cloud {
+    organization = "iavirvarei"
+
+    workspaces {
+      name = "Google_credentials"
+    }
+  }
 
 
 //resource "aws_instance" "web" {
