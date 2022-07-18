@@ -7,7 +7,7 @@ terraform {
       name = "Google_credentials"
     }
   }
-
+}
 
 //resource "aws_instance" "web" {
   //ami                    = data.aws_ami.ubuntu.id
