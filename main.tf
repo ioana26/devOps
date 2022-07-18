@@ -4,7 +4,6 @@ terraform {
     google = {
       source  = "hashicorp/google"
       version = ">= 3.29"
-      region  = "us-central1"
     }
     
   cloud {
