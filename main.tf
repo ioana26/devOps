@@ -7,8 +7,6 @@ terraform {
       name = "Google_credentials"
     }
   }
-}
-
 
 
 resource "google-compute_instace" "my-server" {
@@ -25,4 +23,4 @@ resource "google-compute_instace" "my-server" {
     access_config{}  //This Enable Public IP Address
   }
 }
-
+}
