@@ -5,13 +5,12 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 3.29"
     }
+  }
+  cloud {
+    organization = "iavirvarei"
 
-    cloud {
-      organization = "iavirvarei"
-
-      workspaces {
-        name = "Google_credentials"
+    workspaces 
+    name = "Google_credentials"
       }
     }
   }
-}
