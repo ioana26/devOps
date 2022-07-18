@@ -9,8 +9,8 @@ terraform {
   cloud {
     organization = "iavirvarei"
 
-    workspaces 
-    name = "Google_credentials"
-      }
+    workspaces {
+      name = "Google_credentials"
     }
-  }
+  } 
+}
