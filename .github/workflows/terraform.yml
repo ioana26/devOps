@@ -34,7 +34,7 @@ jobs:
         run: terraform init
         env:
           # terraform_version: 0.13.0:
-          GOOGLE_CREDENTIALS: ${{ secrets.NEW_TOKEN }}
+          GOOGLE_CREDENTIALS: ${{ secrets.GCP_TOKEN }}
       
       - name: Terraform Validate
         id: validate
