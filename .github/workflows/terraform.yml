@@ -26,7 +26,7 @@ jobs:
         id: fmt
         run: | 
             terraform fmt -diff -check -write=false
-            echo '::set-output name=bash_return_Value::$?'
+            
         
 
       - name: Terraform Init
