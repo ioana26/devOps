@@ -1,4 +1,4 @@
-rraform {
+terraform {
 
   cloud {
     organization = "iavirvarei"
