@@ -13,10 +13,10 @@ jobs:
       - name: Terraform
         uses: hashicorp/setup-terraform@v1
         with:
-          terraform_version: 0.14.7
+          terraform_version: 1.25
 
-      - name: Terraform Format
-        run: terraform fmt
+     # - name: Terraform Format
+      #  run: terraform fmt
 
       - name: Terraform Init
         run: terraform init
@@ -27,7 +27,7 @@ jobs:
       - name: tflint
         uses: reviewdog/action-tflint@master
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.GCP_TOKEN }}
           reporter: github-pr-review
           fail_on_error: "true"
           filter_mode: "nofilter"
